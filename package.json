@@ -1,0 +1,42 @@
+{
+  "name": "conditional-travis-deploy",
+  "description": "Generic conditions for TravisCI deployment",
+  "main": "index.js",
+  "bin": "cli.js",
+  "scripts": {
+    "test": "standard",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tlvince/conditional-travis-deploy.git"
+  },
+  "keywords": [
+    "cli-app",
+    "cli",
+    ""
+  ],
+  "author": "Tom Vincent <git@tlvince.com> (https://tlvince.com)",
+  "engines": {
+    "node": ">=4"
+  },
+  "bugs": {
+    "url": "https://github.com/tlvince/conditional-travis-deploy/issues"
+  },
+  "homepage": "https://github.com/tlvince/conditional-travis-deploy#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "standard": "^5.4.1",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.4.0",
+    "semantic-release": "^4.3.5"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
+  "license": "MIT"
+}
