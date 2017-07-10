@@ -17,7 +17,7 @@ module.exports = function () {
     return 'staging'
   }
 
-  if (process.env.TRAVIS_BRANCH === 'develop') {
+  if (process.env.TRAVIS_BRANCH === 'develop' || process.env.TRAVIS_BRANCH === 'van') {
     return 'development'
   }
 
