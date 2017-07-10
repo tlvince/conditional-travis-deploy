@@ -1,5 +1,6 @@
 {
   "name": "conditional-travis-deploy",
+  "version": "0.0.0-development",
   "description": "Generic conditions for TravisCI deployment",
   "main": "index.js",
   "bin": "cli.js",
