@@ -17,8 +17,12 @@ module.exports = function () {
     return 'staging'
   }
 
-  if (process.env.TRAVIS_BRANCH === 'develop' || process.env.TRAVIS_BRANCH === 'van') {
+  if (process.env.TRAVIS_BRANCH === 'develop') {
     return 'development'
+  }
+
+  if (process.env.TRAVIS_BRANCH === 'van') {
+    return 'van'
   }
 
   throw new Error('Unknown build condition')
