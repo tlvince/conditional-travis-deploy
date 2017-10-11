@@ -29,5 +29,9 @@ module.exports = function () {
     return 'van-staging'
   }
 
+  if (process.env.TRAVIS_BRANCH === 'van-merge') {
+    return 'van-merge'
+  }
+
   throw new Error('Unknown build condition')
 }
