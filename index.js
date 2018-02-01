@@ -21,5 +21,9 @@ module.exports = function () {
     return 'development'
   }
 
+  if (process.env.TRAVIS_BRANCH === 'training') {
+    return 'training'
+  }
+
   throw new Error('Unknown build condition')
 }
